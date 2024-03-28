@@ -173,3 +173,17 @@ list.c:93:9: error: unused variable ‘new’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 8c3bb15
+Thu 28 Mar 2024 02:42:37 PM UTC: 
+ list.c | 6 +-----
+ 1 file changed, 1 insertion(+), 5 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:88:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   88 |   return NULL;
+      |          ^~~~
+list.c:87:6: note: declared here
+   87 | void pushFront(List * list, void * data) {
+      |      ^~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+1b22d16
