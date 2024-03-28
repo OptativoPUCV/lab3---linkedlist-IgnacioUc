@@ -48,10 +48,10 @@ void * firstList(List * list) {
 
 
 void * nextList(List * list) {
-  if (list == NULL || list->head == NULL){
+  if (list == 0 || list->head == 0){
     return NULL;
   }
-  if (list->current == NULL){
+  if (list->current == 0){
     return NULL;
   }
   if (list->current->next == 0){
