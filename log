@@ -85,3 +85,14 @@ Thu 28 Mar 2024 02:23:03 PM UTC:
  tests:  6|4
 total_score: 25/70
 b664e11
+Thu 28 Mar 2024 02:25:36 PM UTC: 
+ list.c | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘prevList’:
+list.c:87:1: error: control reaches end of non-void function [-Werror=return-type]
+   87 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+9600f19
