@@ -73,13 +73,13 @@ void * lastList(List * list) {
 
 void * prevList(List * list) {
   if (list == NULL || list->head == NULL){
-    return NULL;
+    return 0;
   }
   if (list->current == NULL){
-    return NULL;
+    return 0;
   }
   if (list->current->prev == NULL){
-    return NULL;
+    return 0;
   }
   list->current = list->current->prev;
   return list->current->data;
@@ -92,6 +92,7 @@ void pushFront(List * list, void * data) {
     return;
   }
   Node* new = createNode(data);
+  if (list->head == NULL)
 }
 
 void pushBack(List * list, void * data) {

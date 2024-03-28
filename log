@@ -145,3 +145,17 @@ list.c:94:9: error: unused variable ‘new’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 4f59450
+Thu 28 Mar 2024 02:31:27 PM UTC: 
+ list.c | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:96:1: error: expected expression before ‘}’ token
+   96 | }
+      | ^
+list.c:94:9: error: unused variable ‘new’ [-Werror=unused-variable]
+   94 |   Node* new = createNode(data);
+      |         ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+6d9ff06
