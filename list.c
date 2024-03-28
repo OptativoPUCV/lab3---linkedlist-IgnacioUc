@@ -91,6 +91,7 @@ void pushFront(List * list, void * data) {
   if (list == NULL){
     return;
   }
+  Node* new = createNode(data);
 }
 
 void pushBack(List * list, void * data) {

@@ -134,3 +134,14 @@ Thu 28 Mar 2024 02:30:44 PM UTC:
  tests:  9|3
 total_score: 35/70
 ea8b161
+Thu 28 Mar 2024 02:31:03 PM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:94:9: error: unused variable ‘new’ [-Werror=unused-variable]
+   94 |   Node* new = createNode(data);
+      |         ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+4f59450
