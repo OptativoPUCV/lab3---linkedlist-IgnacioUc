@@ -88,6 +88,9 @@ void * prevList(List * list) {
 }
 
 void pushFront(List * list, void * data) {
+  if (list == NULL){
+    return 0;
+  }
 }
 
 void pushBack(List * list, void * data) {
