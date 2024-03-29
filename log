@@ -221,3 +221,9 @@ list.c:91:10: error: unused variable ‘new’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 db4e035
+Fri 29 Mar 2024 07:53:13 PM UTC: 
+ list.c | 13 ++++++++++++-
+ 1 file changed, 12 insertions(+), 1 deletion(-)
+ tests:  10|2
+total_score: 45/70
+f42be1f
