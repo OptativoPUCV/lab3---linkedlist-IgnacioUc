@@ -207,3 +207,17 @@ Thu 28 Mar 2024 02:42:51 PM UTC:
  tests:  9|3
 total_score: 35/70
 15aebb5
+Fri 29 Mar 2024 07:52:27 PM UTC: 
+ list.c | 6 ++++++
+ 1 file changed, 6 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘pushFront’:
+list.c:94:1: error: expected expression before ‘}’ token
+   94 | }
+      | ^
+list.c:91:10: error: unused variable ‘new’ [-Werror=unused-variable]
+   91 |   Node * new = createNode(data);
+      |          ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+db4e035
